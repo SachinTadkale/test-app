@@ -1,12 +1,11 @@
-<header>
-  <div class="search-container">
-    <div class="logo">Logo</div>
+<div class="search-container">
+    <div class="logo">Testing IMS</div>
     <div class="search-bar">
-      <input type="text" name="input-search-text" id="search-field" />
+      <input type="text" name="input-search-text" id="search-field" placeholder="Search Here..."/>
       <button type="submit" id="btn-search">Search</button>
     </div>
   </div>
-</header>
+
 <nav>
   <ul>
     <li>
@@ -17,8 +16,6 @@
         <option value="hardware">Hardware</option>
       </select>
     </li>
-    <li>Home</li>
-    <li>Stores</li>
     <li>
       <select name="signup-login" id="signup-login" (change)="navigate($event)">
         <option value="" selected disabled>Account</option>
@@ -26,11 +23,6 @@
         <option value="login">LogIn</option>
       </select>
     </li>
-    <li>Dashboard</li>
+    <li >Dashboard</li>
   </ul>
-  <li id="Dashboard-testing">
-    <a routerLink="/grocery_dashboard">grocery</a>
-    <a routerLink="/electronic_dashboard">electronic</a>
-    <a routerLink="/hardware_dashboard">hardware</a>
-  </li>
 </nav>

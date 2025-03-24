@@ -1,56 +1,65 @@
-header{
+.search-container{
   display: flex;
   padding: 2em;
-  justify-content: space-evenly;
   align-items: center;
-}
-.search-container{
-  width: 80%;
-  display: flex;
-  align-items: center;
+  max-width: 100%;
   justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
 }
 .logo{
   font-size: 2.4em;
   font-weight: 600;
 }
-.search-bar{
-  width: 100%;
-  text-align: center;
+.search-bar {
+  display: flex;
   align-items: center;
-  justify-content: center;
 }
-#search-field{
-  width: 50%;
-  height: 5vh;
+
+#search-field {
+  position: relative;
+  width: 45vw;
+  height: 40px;  /* Set the same height */
   font-size: 1.1em;
   border: 3px solid #CCCCCC;
   outline: none;
-  color: #CCCCCC;
-  background-color: #1e1e1e;
-  margin-right: 10px;
-  padding: 0 20px;
+  color: #1e1e1e;
+   padding: 0 15px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 13px;
+  box-sizing: border-box; /* Ensures padding doesn't affect height */
+  transition: all .2s ease-in-out;
 }
-#btn-search{
-  height: 5.6vh;
+#btn-search {
+  right: 100px;
+  height: 40px;
+  position: absolute;
   font-size: 1.1em;
-  border: 3px solid #CCCCCC;  
-  color: #CCCCCC;
-  background-color: #1e1e1e;
+  border: none;  
+  color: #1e1e1e;
+  background-color: #CCCCCC;
   font-weight: 500;
-  padding: 0 20px;
+  padding: 0 15px;
+  cursor: pointer;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  box-sizing: border-box; /* Ensures proper height */
   transition: all .1s ease-in-out;
 }
+
 #btn-search:hover{
-  transform: scale(1.03);
+  color: #CCCCCC;
+  background-color: #1e1e1e;
 }
 ul{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  background-color: #CCCCCC;
-  height: 10vh;
+  background-color: #1e1e1e;
+  color: #CCCCCC;
+  height: 13vh;
+  font-size: 1.1em
 }
 li,select{
   cursor: pointer;
@@ -58,15 +67,17 @@ li,select{
   display:flex;
   align-items: center;
   background-color  : transparent;
-  color: #1e1e1e;
   height: 3em;
 }
-select,option{
+select{
+  color: #CCCCCC;
   border: none;
   outline: none;
   padding:0 5px;
 }
-
-#Dashboard-testing{
-  gap: 20px;
+option{
+  border-radius: none;
+  color: #1e1e1e;
+  border: none;
+  outline: none;
 }
