@@ -13,7 +13,13 @@ export class SignupService {
     this.SignupDetails.push(details);
     console.log("Store Details:",this.SignupDetails);
   }
-  getDetails(){
-    return this.SignupDetails;
+  // getDetails(){
+  //   return this.SignupDetails;
+  // }
+  getUserByEmail(email:string):signup_data | undefined{
+    return this.SignupDetails.find((SignupDetails) => SignupDetails.email);
+  }
+  validateUser(email:string,password:string){
+      return this.SignupDetails.some((SignupDetails)=> SignupDetails.email === email && SignupDetails.password === password);
   }
 }

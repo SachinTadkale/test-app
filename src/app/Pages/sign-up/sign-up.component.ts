@@ -9,7 +9,7 @@ import { signup_data } from '../../model/signup-data';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css'], // ✅ Fixed styleUrls
+  styleUrls: ['./sign-up.component.css'], 
 })
 export class SignUpComponent {
   signupData: signup_data = {
@@ -21,7 +21,7 @@ export class SignUpComponent {
   };
   confirm_password = '';
 
-  constructor(private signup_service: SignupService, private router: Router) {} // ✅ Inject Router
+  constructor(private signup_service: SignupService, private router: Router) {}
 
   OnSignUp() {
     if (
@@ -35,10 +35,10 @@ export class SignUpComponent {
         this.signup_service.storeSignupDetails(this.signupData);
         alert('SignUp Successful');
 
-        // ✅ Redirect to login page after signup
+        // Redirect to login page after signup
         this.router.navigate(['/login']);
 
-        // ✅ Reset form
+        // Reset form
         this.signupData = {
           full_name: '',
           email: '',

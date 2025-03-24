@@ -1,9 +1,11 @@
 <div class="container">
   <div class="login-container">
-    <input type="text" name="email" placeholder="Enter Email"/>
-    <input type="password" name="password" placeholder="Password"/>
+    <form (ngSubmit)="onLogin()">  <!-- ✅ Correct event binding -->
+      <input type="text" name="email" placeholder="Enter Email" [(ngModel)]="email" required />
+      <input type="password" name="password" placeholder="Password" [(ngModel)]="password" required />
 
-    <button type="submit" id="login-btn">LogIn</button>
-    <p>Didn't Register?<span id="signup-page" routerLink="/signup">Register Here</span></p>
+      <button type="submit" id="login-btn">LogIn</button>
+    </form>
+    <p>Didn't Register? <span id="signup-page" routerLink="/signup">Register Here</span></p>
   </div>
 </div>
