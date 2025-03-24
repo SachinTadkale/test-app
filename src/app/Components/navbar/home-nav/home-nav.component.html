@@ -1,0 +1,31 @@
+<header>
+  <div class="search-container">
+    <div class="logo">Logo</div>
+    <div class="search-bar">
+      <input type="text" name="input-search-text" id="search-field" />
+      <button type="submit" id="btn-search">Search</button>
+    </div>
+  </div>
+</header>
+<nav>
+  <ul>
+    <li>
+      <select name="store-type" id="store-type" (change)="navigate($event)">
+        <option value="" selected disabled>Select Store Type</option>
+        <option value="grocery">Grocery</option>
+        <option value="electronics">Electronics</option>
+        <option value="hardware">Hardware</option>
+      </select>
+    </li>
+    <li>Home</li>
+    <li>Stores</li>
+    <li>
+      <select name="signup-login" id="signup-login" (change)="navigate($event)">
+        <option value="" selected disabled>SignUp/LogIn</option>
+        <option value="signup">SignUp</option>
+        <option value="login">LogIn</option>
+      </select>
+    </li>
+    <li>Dashboard</li>
+  </ul>
+</nav>
