@@ -66,3 +66,7 @@ select,option{
   outline: none;
   padding:0 5px;
 }
+
+#Dashboard-testing{
+  gap: 20px;
+}
