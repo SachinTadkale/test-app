@@ -31,5 +31,10 @@ export const routes: Routes = [
     pathMatch:'full',
     loadComponent: ()=>{ return import('./Pages/Dashboards/hardware/hardware.component').then((m)=>m.HardwareComponent);}
   },
-  
+  {
+    path:'profile',
+    pathMatch:'full',
+    loadComponent: ()=>{ return import('./Pages/profile/profile.component').then((m)=>m.ProfileComponent);}
+  },
+ 
 ];
