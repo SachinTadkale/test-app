@@ -1,83 +1,69 @@
-.search-container{
-  display: flex;
-  padding: 2em;
-  align-items: center;
-  max-width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 100px;
-}
-.logo{
-  font-size: 2.4em;
-  font-weight: 600;
-}
-.search-bar {
+#navbar{
+  height: 75px;
+  width:100%;
   display: flex;
   align-items: center;
+  /* border: 1px solid black; */
+
+}
+#input{
+  /* border: 1px solid red; */
+  margin-left: 180px;
+  display: flex;
+  
 }
 
-#search-field {
-  position: relative;
-  width: 45vw;
-  height: 40px;  /* Set the same height */
-  font-size: 1.1em;
-  border: 3px solid #CCCCCC;
-  outline: none;
-  color: #1e1e1e;
-   padding: 0 15px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 13px;
-  box-sizing: border-box; /* Ensures padding doesn't affect height */
-  transition: all .2s ease-in-out;
-}
-#btn-search {
-  right: 100px;
-  height: 40px;
-  position: absolute;
-  font-size: 1.1em;
-  border: none;  
-  color: #1e1e1e;
-  background-color: #CCCCCC;
-  font-weight: 500;
-  padding: 0 15px;
-  cursor: pointer;
-  border-top-right-radius: 13px;
-  border-bottom-left-radius: 13px;
-  box-sizing: border-box; /* Ensures proper height */
-  transition: all .1s ease-in-out;
+
+
+#search_bar{
+  height: 35px;
+  width: 210px;
+  radius:25px;
 }
 
-#btn-search:hover{
-  color: #CCCCCC;
-  background-color: #1e1e1e;
+#search_btn{
+  width: 120px;
+  height: 35px;
+  margin-left: 5px;
 }
+
+#logo{
+  margin-left: 150px;
+  /* border:1px solid blue; */
+  font-size:25px;
+  font-weight:500;
+}
+
+#cart{
+  height:50px;
+  width:50px;
+  /* border:1px solid green; */
+  margin-left: 5px;
+}
+#Addtocart{
+  /* border:1px solid purple; */
+  display: flex;
+}
+#nav{
+  height: 70px;
+  width: 100%;
+  /* border:1px solid red; */
+  margin-top: 10px;
+
+}
+
 ul{
   display: flex;
+  list-style-type: none;
+  align-items:center;
   justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+#box{
+  /* border: 1px solid rgb(255, 0, 221); */
+  display: flex;
   align-items: center;
-  list-style: none;
-  background-color: #1e1e1e;
-  color: #CCCCCC;
-  height: 13vh;
-  font-size: 1.1em
-}
-li,select{
-  cursor: pointer;
-  font-size: 1em;
-  display:flex;
-  align-items: center;
-  background-color  : transparent;
-  height: 3em;
-}
-select{
-  color: #CCCCCC;
-  border: none;
-  outline: none;
-  padding:0 5px;
-}
-option{
-  border-radius: none;
-  color: #1e1e1e;
-  border: none;
-  outline: none;
+  
+  margin-left: 30px;
 }
