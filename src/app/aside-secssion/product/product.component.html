@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Product Management</h2>
+  <form (submit)="saveProduct()">
+    <input type="hidden" [(ngModel)]="product.id" name="id">
+    <input type="text" [(ngModel)]="product.name" name="name" placeholder="Product Name" required>
+    <input type="number" [(ngModel)]="product.price" name="price" placeholder="Price" required>
+    <button type="submit">Save</button>
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productsArray">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <button (click)="editProduct(product)">Edit</button>
+          <button (click)="deleteProduct(product.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
